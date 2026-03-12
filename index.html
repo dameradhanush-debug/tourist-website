@@ -18,7 +18,7 @@ min-height:100%;
 }
 
 body{
-background-color:#d9d9d9;
+background:transparent;
 scroll-behavior:smooth;
 position:relative;
 }
@@ -32,7 +32,12 @@ background-position:center;
 background-size:cover;
 background-repeat:no-repeat;
 animation:bgMove 18s ease-in-out infinite alternate;
-z-index:-1;
+z-index:0;
+}
+
+body > *{
+position:relative;
+z-index:1;
 }
 
 .header-btn{
